@@ -29,6 +29,15 @@
         $second->add_grade(50);
         $students['a456'] = $second;
 
+        $third = new Student();
+        $third->surname = "Morton";
+        $third->first_name = "Maitiu";
+        $third->add_email('home', 'maitiumorton@gmail.com');
+        $third->add_grade(100);
+        $third->add_grade(100);
+        $third->add_grade(100);
+        $students['k432'] = $third;
+
         foreach ($students as $student)
             echo $student->toString();
         ?>
